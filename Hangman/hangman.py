@@ -1,5 +1,9 @@
+import random
+
+
 print("HANGMAN")
-win_word = "python"
+lists = ["python", "java", "javascript", "php"]
+win_word = random.choice(lists)
 user = input("Guess the word:> ")
 if user == win_word:
     print("You survived!")
